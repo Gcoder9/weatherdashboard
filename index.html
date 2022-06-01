@@ -13,6 +13,28 @@
         <header>
             <h1 class="bg-primary text-white p-3 text-center">Weather Dashboard</h1>
         </header>
+        <section class="col-sm-12 col-md-3 bg-light">
+            <!-- search bar/form -->
+            <form class="d-grid gap-2 mt-2 pb-2 border-bottom border-4 border-dark">
+                <label for="Search" class="CenterText">Search for a City:</label>
+                <input type="text" class="form-control" placeholder="City, State" id="userSearch">
+                <button type="submit" class="btn btn-primary " id="searchBtn"><i class="fas fa-search"></i> Search...
+                </button>
+            </form>
+            
+            <!-- search results -->
+            <div class="mt-2" id="searchHistory"></div>
+            
+            </section>
+        <section class="col-sm-12 col-md-9">
+            
+            <div id="currentWeather"></div>
+            
+            <div id="forecast" class="mb-5 d-flex flex-wrap"></div>
+        </section>
+    </div>
+
+
     <script src="./script.js"></script>
 </body>
 </html>
